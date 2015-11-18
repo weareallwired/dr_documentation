@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
         :recoverable, :rememberable, :trackable, :validatable
   has_many :users
   belongs_to :user
+  has_and_belongs_to_many :users
 end
